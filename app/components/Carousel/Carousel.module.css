@@ -1,0 +1,57 @@
+.carouselContainer {
+    position: relative;
+}
+
+.circleLayer {
+    display: none;
+}
+
+.prevIcon {
+    display: none;
+}
+
+.smallDevice {
+    display: block;
+    object-fit: cover;
+}
+
+.largeDevice {
+    display: none;
+}
+
+
+/* Active pagination dot */
+.swiper-pagination-bullet-active {
+    background-color: #00ff00;
+    background: #00ff00;
+    /* Change color to green */
+}
+
+@media (min-width:60rem) {
+    .smallDevice {
+        display: none;
+    }
+
+    .largeDevice {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .circleLayer {
+        display: grid;
+        place-items: center;
+        padding: 10px;
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: rgba(51, 51, 51, 0.5);
+        border-radius: 30rem;
+    }
+
+
+
+    .prevIcon {
+        display: block;
+    }
+}

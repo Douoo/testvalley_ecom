@@ -1,0 +1,58 @@
+.productsDeal {
+    margin-block: 3.5rem;
+}
+
+.productsView {
+    position: relative;
+    padding: 1rem;
+}
+
+.slider {
+    display: none;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.deal {
+    padding-right: 2.5rem;
+    padding-bottom: 1.25rem;
+}
+
+.deal *+* {
+    margin-top: 0.5rem;
+}
+
+.deal h3 {
+    color: var(--clr-neutral-900);
+    font-weight: 600;
+}
+
+@media(min-width: 60rem) {
+    .productsView {
+        display: flex;
+        margin-bottom: 1rem;
+        padding-inline: 0;
+    }
+
+    .deal {
+        min-width: 15rem;
+    }
+
+    .deal h3 {
+        font-size: 1.5rem;
+    }
+
+
+    .products {
+        display: none;
+    }
+
+    .slider {
+        display: block;
+        min-width: 720px;
+    }
+
+}
