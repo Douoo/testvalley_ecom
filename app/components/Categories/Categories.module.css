@@ -1,9 +1,7 @@
 .categories {
+    width: 100%;
     display: grid;
-    padding-inline: 1.25rem;
-    grid-row-gap: 24px;
-    grid-column-gap: 12px;
-    padding: 1rem 1.25rem;
+    row-gap: 0.75rem;
 }
 
 @media (max-width: 60rem) {
@@ -15,6 +13,9 @@
 @media (min-width: 60rem) {
     .categories {
         grid-auto-flow: column;
+        padding: 1rem 1.25rem;
+        row-gap: 1.5rem;
+        column-gap: 0.75rem;
     }
 }
 
