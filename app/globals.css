@@ -24,7 +24,7 @@
   font-family: swiper-icons;
   font-size: 1rem !important;
   text-transform: none !important;
-  color: var(--clr-neutral-100);
+  color: var(--icon-clr, var(--clr-neutral-100));
 }
 
 .swiper-pagination {

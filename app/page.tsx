@@ -1,31 +1,30 @@
 import Carousel from "./components/Carousel/Carousel";
 import Categories from "./components/Categories/Categories";
+import FloatingButton from "./components/FloatingButton/FloatingButton";
 import Header from "./components/Header/Header";
+import Image from "next/image";
 import Container from "./components/Layouts/Container";
-import ProductList from "./components/Products/ProductList";
+import ProductList from "./components/ProductList/ProductList";
 
 export default function Home() {
   return (
     <>
-      <Container className="sm:bg-white">
-        <Header />
-        <main>
+      <Header />
+      <main>
+        <Container className="sm:bg-white">
           <Carousel />
           <Categories />
           <ProductList />
-        </main>
-      </Container>
+          <FloatingButton enableBadge={true}>
+            <Image
+              src="/channeltalk.png"
+              width={48}
+              height={48}
+              alt="chat with support"
+            />
+          </FloatingButton>
+        </Container>
+      </main>
     </>
   );
-}
-
-{
-  /* <Image
-src="/vercel.svg"
-alt="Vercel Logo"
-className="dark:invert"
-width={100}
-height={24}
-priority
-/> */
 }

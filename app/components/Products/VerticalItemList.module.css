@@ -1,0 +1,17 @@
+.productsDeal {
+    margin-block: 3.5rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+@media(min-width: 60rem) {
+    .products {
+        display: none;
+    }
+
+}

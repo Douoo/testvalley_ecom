@@ -1,8 +1,8 @@
 import React from "react";
-import { Item } from "./ProductCard";
+import { Item } from "../Products/ProductCard";
 import styles from "./ProductList.module.css";
-import HorizontalItemList from "./HorizontalItemList";
-import VerticalItemList from "./VerticalItemtList";
+import HorizontalItemList from "../Products/HorizontalItemList";
+import VerticalItemList from "../Products/VerticalItemtList";
 
 interface Deal {
   id: number;
@@ -31,8 +31,6 @@ export default async function ProductList() {
             <div className={styles.deal}>
               <h3 className="font-bold">{deal.title}</h3>
               <h4>{deal.subtitle}</h4>
-              {/* <SlideNext /> */}
-              {/* <SlidePrev /> */}
             </div>
             <HorizontalItemList className={styles.slider} items={deal.items} />
             <VerticalItemList

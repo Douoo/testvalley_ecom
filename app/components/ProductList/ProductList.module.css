@@ -1,22 +1,12 @@
-.productsDeal {
-    margin-block: 3.5rem;
-}
-
 .productsView {
     position: relative;
-    /* padding: 1rem; */
-    max-width: 90%;
+    max-width: 95%;
+    margin-inline: auto;
+    margin-block: 3rem 1rem;
 }
 
 .slider {
     display: none;
-}
-
-.products {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    width: 100%;
 }
 
 .deal {
@@ -33,11 +23,16 @@
     font-weight: 600;
 }
 
+.deal h4 {
+    color: rgb(153, 153, 153);
+}
+
 @media(min-width: 60rem) {
     .productsView {
         display: flex;
         margin-bottom: 1rem;
         padding-inline: 0;
+        max-width: 100%;
     }
 
     .deal {
@@ -48,14 +43,8 @@
         font-size: 1.5rem;
     }
 
-
-    .products {
-        display: none;
-    }
-
     .slider {
         display: block;
         min-width: 720px;
     }
-
 }

@@ -1,3 +1,7 @@
+.header {
+    border-bottom: 1px solid rgb(238, 238, 238);
+}
+
 .mobileNav {
     display: block;
 }
@@ -25,7 +29,7 @@
     position: relative;
 }
 
-.formControl input {
+.formControl input[type=search] {
     width: 100%;
     background: none;
     background-color: rgba(0, 0, 0, 0);
@@ -37,9 +41,15 @@
     letter-spacing: -0.5px;
     font-size: 14px;
     line-height: 1.57;
+    appearance: textfield;
 }
 
-.formControl input[type=text]:focus {
+.formControl input::placeholder {
+    color: #999999;
+}
+
+.formControl input[type=search]:focus {
+    outline: none;
     border: 1px solid var(--clr-primary-800);
 }
 

@@ -2,7 +2,7 @@
 import React from "react";
 
 import ProductCard, { Item } from "./ProductCard";
-import styles from "./ProductList.module.css";
+import styles from "./VerticalItemList.module.css";
 
 export default function VerticalItemList({
   items,
